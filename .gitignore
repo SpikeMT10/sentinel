@@ -1,0 +1,34 @@
+# Lokální tajemství a provozní data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.vault-pass
+.vault-password
+vault-password*
+ansible/inventories/local/
+config/local/
+secrets/
+backups/
+reports/
+logs/
+*.log
+# Lokální vývoj
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+node_modules/
+dist/
+build/
+.coverage
+.DS_Store
+.idea/
+.vscode/
