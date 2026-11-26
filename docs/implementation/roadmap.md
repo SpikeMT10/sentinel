@@ -1,8 +1,8 @@
 # Sentinel – Implementation Roadmap
 
-> Snímek projektové dokumentace k 26. 11. 2026. Zdroj: https://chatgpt.com/space/page_2cdc66702c5c819183899d8845edbb6b. Změny architektury vyžadují evidovanou revizi a souhlas vlastníka.
+> Snímek projektové dokumentace k 26. 11. 2026 (revize zdroje 2). Zdroj: https://chatgpt.com/space/page_2cdc66702c5c819183899d8845edbb6b. Změny architektury vyžadují evidovanou revizi a souhlas vlastníka. Operativní stav úkolů ověřuj v GitHub Issues.
 
-**Verze 1.0 | 26. 11. 2026 | Realizační plán podle schváleného MASTER 1.0 | Stav: E0 připraveno k zahájení.**
+**Verze 1.1 | 26. 11. 2026 | Realizační plán podle schváleného MASTER 1.0 | Stav: E0 zahájeno.**
 
 Řídicí specifikace: [MASTER 1.0](https://chatgpt.com/space/page_0542512790e081919d47e5e6850c2c0e); podklad: [Revize R1, F01–F16](https://chatgpt.com/space/page_68d5eab9a4948191bf3a848bff4bb8bc).
 
@@ -30,7 +30,7 @@ MVP 0.1 je jeden instalovatelný pozorovatel na laboratorním VPS, který poskyt
 
 | Rozhodnutí | Před čím | Stav |
 |---|---|---|
-| GitHub vlastník (osobní účet / organizace), jméno privátního repozitáře, tarif, přístup a nezávislý reviewer | E0 | Otevřeno |
+| GitHub vlastník, privátní repozitář, tarif, přístup a nezávislý reviewer | E0 | Částečně: SpikeMT10/sentinel a přístup ověřeny; GitHub Free a funkční 2FA/Passkey potvrzeny vlastníkem; technická ochrana větve a revize otevřeny |
 | Testovací VM/VPS, poskytovatel, podporovaný Debian a architektura, rozpočet | E0/E1 | Otevřeno |
 | Schéma Collector, inventář, preflight a Ansible role, síťová politika | E1 | Návrh k ověření |
 | Restic backend a RPO/RTO, Watchdog a záložní kanál, autorizované skenovací cíle | E2 | Otevřeno |
@@ -45,7 +45,7 @@ Vlastník schvaluje zásadní rozhodnutí, rozpočet, přístupy a produkční n
 
 ## 6. Nejbližší postup
 
-1. Potvrdit vlastníka GitHub repozitáře a izolované testovací prostředí.
+1. GitHub Free a 2FA/Passkey potvrzeny vlastníkem 26. 11. 2026. Vyřešit technickou ochranu větve nebo ověřený ekvivalent a odbornou revizi; potvrdit izolované testovací prostředí.
 
 2. Založit privátní repo se schváleným názvem; prověřit možnosti ochrany větví.
 
@@ -55,4 +55,4 @@ Vlastník schvaluje zásadní rozhodnutí, rozpočet, přístupy a produkční n
 
 5. Po úspěchu E1 zahájit samostatné integrace bezpečnostních nástrojů E2.
 
-Nejsou vytvořeny žádné GitHub repozitáře, VPS ani přístupové klíče. Všechny realizační brány jsou dosud neověřené.
+**Realizační stav 26. 11. 2026:** [privátní GitHub repozitář](https://github.com/SpikeMT10/sentinel) je založen, [PR #1](https://github.com/SpikeMT10/sentinel/pull/1) připraven jako draft; všech [21 Issues](https://github.com/SpikeMT10/sentinel/issues) založeno (DEV-002 uzavřen). Žádný VPS, testovací prostředí ani nové přístupové klíče nebyly vytvořeny. Ochrana větví a CI nejsou ověřeny ani aktivovány. E0 brána zůstává otevřená.
