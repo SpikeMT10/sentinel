@@ -19,9 +19,9 @@
 2. Pracuj na samostatné větvi s malou, reviewovatelnou změnou a ID DEV-xxx.
 3. Přidej pozitivní i negativní testy, popiš bezpečnostní dopad a případný rollback.
 4. Výsledek dolož skutečnými testy; neprohlašuj neprovedené testy za úspěšné. Chybějící stav označ unknown.
-5. Připrav PR. Nemerguj sám bezpečnostně citlivý kód, neschvaluj vydání ani neaktivuj produkční deployment.
+5. Připrav PR. Žádný PR neslučuj do hlavní větve bez výslovného souhlasu vlastníka s konkrétní revizí. Bezpečnostně citlivý kód navíc vyžaduje nezávislou odbornou lidskou revizi. Neschvaluj vydání ani neaktivuj produkční deployment.
 6. Aktualizuj dokumentaci a ADR, pokud se mění rozhodnutí. Nezavírej úkol, pokud jeho akceptace není doložena.
 
 ## Aktuální etapa E0
 
-Nejprve dokončit DEV-001 a DEV-006; následuje E0 infrastruktura a teprve potom DEV-009/010. Žádné implementační ani bezpečnostní testy nejsou v inicializačním commitu prohlášeny za hotové.
+Nejprve dokončit DEV-001, DEV-004 a DEV-006, poté odpovídající E0 infrastrukturu a teprve potom DEV-009/010. Technicky vynutitelná ochrana větve nebo ověřený rovnocenný mechanismus je podmínkou uzavření E0; samotné dodržování PR postupu na GitHub Free nenahrazuje tuto bránu. Žádné implementační ani bezpečnostní testy nejsou v inicializačním commitu prohlášeny za hotové.
