@@ -7,7 +7,7 @@
 5. Před merge musí být splněny požadované kontroly a revize. Citlivý kód vyžaduje nezávislou odbornou lidskou revizi; AI review ji nenahrazuje.
 6. Vydání, podpis, distribuce a produkční nasazení jsou samostatné schvalované kroky.
 
-Nastavení GitHub ochrany větví, nezávislý reviewer, CI a tarif zatím nebyly ověřeny. Dokud nejsou nastaveny odpovídající brány, žádné produkční vydání.
+Vlastník potvrdil tarif GitHub Free a aktivaci 2FA, Passkey i ověřené přihlášení dne 26. 11. 2026; nastavení účtu nebylo nezávisle kontrolováno. Privátní repozitář byl ověřen. Technicky vynutitelná ochrana hlavní větve (nebo ověřený ekvivalent), nezávislá odborná revize a CI zůstávají otevřené. Organizační pravidlo PR samo nenahrazuje technickou ochranu. Přípravný dokumentační PR smí být sloučen pouze po výslovném schválení vlastníka; tím se neuzavírá E0. Před uzavřením E0 musí být odpovídající bezpečnostní brány doloženy. Žádné produkční vydání bez splnění dalších příslušných bran.
 
 ## Definition of Done
 
